@@ -21,5 +21,25 @@ int main() {
 			thread_sum[id] = thread_sum[id] + mul_values[i];
 		}
 	}
+	
+	// Print the arrays
+	printf("Input Vector (Even Numbers):\n");
+	for(i = 0; i < 200; i++) {
+		printf("%d ", input_vector[i]);
+	}
+	printf("\n\n");
+	
+	printf("Weight Vecetor (Odd Numbers):\n");
+	for(i = 0; i < 200; i++) {
+		printf("%d ", weights_vector[i]);
+	}
+	printf("\n\n");
+	
+	for(i = 0; i < 10; i++) {
+		printf("Thread-%d sum = %d\n", i, thread_sum[i]);
+		sum = sum + thread_sum[i];
+	}
+	
+	printf("\nSum_function = %d\n", sum);
 	return 0;
 }
