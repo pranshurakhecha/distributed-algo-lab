@@ -20,6 +20,7 @@ int main() {
 		printf("Thread-%d sum = %d\n", i, thread_summ[i]);
 		sum = sum + thread_sum[i];
 	}
+	printf("Sum = %d", sum);
 	return 0;
 }
 
