@@ -3,6 +3,9 @@
 #include <omp.h>
 
 int main() {
+	int i, sum = 0;
+	int thread_sum[4];
+	omp_set_num_threads(4);
 	return 0;
 }
 
