@@ -29,7 +29,7 @@ int main() {
 	}
 	printf("\n\n");
 	
-	printf("Weight Vecetor (Odd Numbers):\n");
+	printf("Weight Vector (Odd Numbers):\n");
 	for(i = 0; i < 200; i++) {
 		printf("%d ", weights_vector[i]);
 	}
