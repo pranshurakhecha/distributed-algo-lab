@@ -16,6 +16,10 @@ int main() {
 			thread_sum[id] = thread_sum[id] + i;
 		}
 	}
+	for(i = 0; i < 4; i++) {
+		printf("Thread-%d sum = %d\n", i, thread_summ[i]);
+		sum = sum + thread_sum[i];
+	}
 	return 0;
 }
 
