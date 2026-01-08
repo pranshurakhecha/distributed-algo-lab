@@ -12,12 +12,13 @@ int main() {
 		int id = omp_get_thread_num();
 		thread_sum[id] = 0;
 		#pragma omp for
+		for(i = 1; i <= 100; i++)
 		{
 			thread_sum[id] = thread_sum[id] + i;
 		}
 	}
 	for(i = 0; i < 4; i++) {
-		printf("Thread-%d sum = %d\n", i, thread_summ[i]);
+		printf("Thread-%d sum = %d\n", i, thread_sum[i]);
 		sum = sum + thread_sum[i];
 	}
 	printf("Sum = %d", sum);
