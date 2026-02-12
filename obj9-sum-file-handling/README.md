@@ -1,0 +1,1 @@
+Objective-9: Write a program in C using openMP to find sum of integers from an external text file random.txt
