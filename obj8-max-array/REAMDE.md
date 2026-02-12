@@ -1,0 +1,1 @@
+Objective-8: Write a program in C using openMP to find max from an integer array using critical directive to avoid race conditions
